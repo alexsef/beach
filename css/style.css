@@ -1,0 +1,205 @@
+@font-face {
+    font-family: HelveticaNeueCyr;
+    src: url(../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-Medium.otf);
+   }
+
+html {
+    font-family: HelveticaNeueCyr;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.row {
+    /*width: 1200px !important;*/
+}
+
+.right {
+    float: right;
+}
+
+.image-logo {
+    width: 165px;
+    height: 74px;
+}
+
+.header {
+    background: url(../img/Слой-2.png) no-repeat;
+    width: 100%;
+    /*-moz-background-size: 100%;*/
+    /*-webkit-background-size: 100%;*/
+    /*-o-background-size: 100%;*/
+    /*background-size: 100%;*/
+    height: 80px;
+    background-size: cover;
+}
+.body {
+    background-color: #eee;
+    min-height: 400px;
+    display: block;
+}
+
+.menu > li {
+    list-style-type: none;
+    color:  #4d4d4d;
+}
+
+.menu {
+    background-color: #eee;
+}
+
+.body {
+    padding-top: 15px;
+}
+
+.line {
+    width: 100%;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.footer {
+    background: url(../img/Слой-4-копия1.png) no-repeat;
+    /*width: 100%;*/
+    /*-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;*/
+    height: 80px;
+    /*background-size: cover;*/
+}
+
+.right > img {
+    width: 165px;
+    height: 74px;
+}
+
+.phone {
+    display: inline-block;
+    font-family: HelveticaNeueCyr;
+    color:  #1d1e1e;
+    padding: 20px 10px;
+}
+
+.phone > span {
+    font-weight: 100px;
+}
+
+.private-cab {
+    color: #fff;
+    padding-top: 7px;
+}
+
+.private {
+    width: 170px;
+    margin: auto;
+    font-size: 21px;
+}
+
+.private > a {
+    color: #fff;
+}
+
+.copyright {
+    float: right;
+    padding-top: 30px;
+}
+
+.back {
+    width: 160px;
+    margin: auto;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.back > a > img {
+    width: 13px;
+    padding-bottom: 3px;
+    margin-right: 3px;
+    /*background-size: cover;*/
+}
+
+.back > a {
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-out {
+    height: 60px;
+}
+
+.img-out > a {
+    color: #fff;
+}
+
+.img-out > a > img {
+    float: right;
+    height: 40px;
+    padding-top: 15px;
+}
+
+.out {
+    position: absolute;
+    font-size: 11px;
+    bottom: 0px;
+    right: 11px;
+    font-weight: 200;
+    float: right;
+    vertical-align: bottom;
+}
+
+.out > a {
+    color: #fff;
+}
+
+.figura > img {
+    float: right;
+    height: 60px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.admin > a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    float: right;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+
+.social {
+    padding-top: 10px;
+    display: inline-block;
+    height: 50px;
+}
+
+.social > img {
+    padding-bottom: 20px;
+    width: 70px;
+}
+
+.addres {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .addres {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    
+}
