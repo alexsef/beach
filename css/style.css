@@ -25,7 +25,7 @@ a:hover {
 }
 
 .header {
-    background: url(../img/Слой-2.png) no-repeat;
+    background: url(../img/layer-2.png) no-repeat;
     width: 100%;
     /*-moz-background-size: 100%;*/
     /*-webkit-background-size: 100%;*/
@@ -62,12 +62,7 @@ a:hover {
 }
 
 .footer {
-    background: url(../img/Слой-4-копия1.png) no-repeat;
-    /*width: 100%;*/
-    /*-moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;*/
+    background: url(../img/layer-4-cop-2.png) no-repeat;
     height: 80px;
     /*background-size: cover;*/
 }
@@ -187,6 +182,11 @@ a:hover {
     padding-left: 10px;
 }
 
+@media screen and (max-width: 1354px) {
+    .menu > li > a {
+        font-size: 11px;
+    }
+}
 
 @media screen and (max-width: 991px) {
     .addres {
@@ -200,6 +200,92 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 1920px) {
-    
+@media screen and (min-width: 1800px) {
+    .container-fluid {
+        height: 125px;
+    }
+
+    .row {
+        width: 1520px !important;
+        margin: auto;
+        height: 125px;
+    }
+
+    .image-logo {
+        width: 245px;
+        height: 115px;
+        padding-top: 10px;
+    }
+
+    .private {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .private > a {
+        font-size: 30px;
+    }
+
+    .back {
+        width: 100%;
+    }
+
+    .back > a {
+        padding-left: 10px;
+        font-size: 23px;
+    }
+
+    .admin {
+        position: absolute;
+        top: 50px;
+        right: 115px;
+        font-size: 25px;
+        width: 200px;
+        height: 50px;
+        margin: 0px;
+        display: inline-block;
+    }
+
+    .xs {
+        height: 125px;
+    }
+
+    .admin > a {
+        font-size: 23px;
+        padding: 0px;
+    }
+
+    .figura {
+        height: 125px;
+    }
+
+    .figura > img {
+        height: 105px;
+        padding-top: 20px;
+    }
+
+    .img-out {
+        height: 125px;
+    }
+
+    .img-out > a > img {
+        width: 40px;
+        height: 40px;
+        padding-top: 0px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .out {
+        top: 75px;
+        right: 10px;
+        font-size: 17px;
+    }
+    .phone {
+        padding-top: 45px;
+    }
+
+    .copyright {
+        padding-top: 55px;
+    }
 }
