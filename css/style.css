@@ -11,6 +11,22 @@ a:hover {
     text-decoration: none;
 }
 
+hr {
+    height: 1px;
+    opacity: 0.18;
+}
+
+.vertical-line {
+    border: 1px solid black;
+    width: 1px;
+    height: 50px;
+    border-collapse: inherit;
+}
+
+.social > img {
+    width: 20px;
+}
+
 .row {
     /*width: 1200px !important;*/
 }
@@ -42,7 +58,11 @@ a:hover {
 
 .menu > li {
     list-style-type: none;
-    color:  #4d4d4d;
+}
+
+.menu > li > a {
+    color: #4d4d4d;
+    font-weight: 400;
 }
 
 .menu {
@@ -58,7 +78,7 @@ a:hover {
 }
 
 .icon {
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .footer {
@@ -132,15 +152,16 @@ a:hover {
 
 .img-out > a > img {
     float: right;
-    height: 40px;
-    padding-top: 15px;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
 }
 
 .out {
     position: absolute;
     font-size: 11px;
-    bottom: 0px;
-    right: 11px;
+    bottom: 5px;
+    right: 14px;
     font-weight: 200;
     float: right;
     vertical-align: bottom;
@@ -152,7 +173,7 @@ a:hover {
 
 .figura > img {
     float: right;
-    height: 60px;
+    height: 70px;
     padding-right: 10px;
     padding-top: 15px;
 }
@@ -166,20 +187,40 @@ a:hover {
     padding-right: 10px;
 }
 
+.admin > a > p {
+    text-align: right;
+    margin: 0px;
+    height: 24px;
+    margin-top: -5px;
+}
+
 .social {
     padding-top: 10px;
     display: inline-block;
     height: 50px;
 }
 
-.social > img {
-    padding-bottom: 20px;
-    width: 70px;
+.circle {
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
 }
 
 .addres {
     display: inline-block;
     padding-left: 10px;
+}
+
+.modal-dialog {
+    /*background-image: url(../img/fon.jpg) !important;*/
+    background: linear-gradient(to right top, #f58905 , #cae700);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.modal-content {
+    box-shadow: 0px 0px 0px;
+    border: 0px;
 }
 
 @media screen and (max-width: 1354px) {
@@ -201,6 +242,9 @@ a:hover {
 }
 
 @media screen and (min-width: 1800px) {
+    .icon {
+        padding-right: 10px;
+    }
     .container-fluid {
         height: 125px;
     }
@@ -269,16 +313,17 @@ a:hover {
     }
 
     .img-out > a > img {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
         padding-top: 0px;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .out {
-        top: 75px;
-        right: 10px;
+        top: 80px;
+        right: 15px;
         font-size: 17px;
     }
     .phone {
@@ -287,5 +332,34 @@ a:hover {
 
     .copyright {
         padding-top: 55px;
+    }
+
+    .admin > a > p {
+        text-align: right;
+        margin: 0px;
+        height: 40px;
+        margin-top: -15px;
+        margin-right: -7px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        background: url(../img/layer-2.png) no-repeat;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .private-cab {
+        display: none;
+    }
+
+    .img-out {
+        display: none;
+    }
+
+    .image-logo {
+        width: 125px;
+        height: 65px;
     }
 }
