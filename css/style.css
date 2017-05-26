@@ -67,7 +67,7 @@ hr {
 }
 .body {
     background-color: #eee;
-    min-height: 400px;
+    min-height: 700px;
     display: block;
 }
 
@@ -93,7 +93,30 @@ hr {
 }
 
 .icon {
-    padding-right: 5px;
+    padding-right: 10px;
+}
+
+.text-blue-decoration {
+    text-decoration: underline;
+    color: #00aeff;
+    font-weight: 200;
+}
+
+.user-btn {
+    margin-top: 20px;
+    width: 180px;
+    height: 32px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff8e4e), to(#ed5f00));
+    border-radius: 10px;
+    border: 0px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.user-avatar_upload_button {
+    margin: 0px;
 }
 
 .footer {
@@ -263,9 +286,29 @@ hr {
     border: 0px;
 }
 
+.user-page_header {
+    color: #0089fd;
+    margin-bottom: 80px;
+    margin-left: 70px;
+}
+
+#check {
+    width: 30px;
+}
+
+.user-form {
+    margin-top: 126px;
+}
+
+.image-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1354px) {
     .menu > li > a {
-        font-size: 11px;
+        font-size: 14px;
     }
 }
 
@@ -286,10 +329,14 @@ hr {
         padding-right: 10px;
     }
     .container-fluid {
+        /*height: 125px;*/
+    }
+
+    .header, .footer {
         height: 125px;
     }
 
-    .row {
+    .user-row {
         width: 1520px !important;
         margin: auto;
         height: 125px;
@@ -388,6 +435,21 @@ hr {
 
     .addres {
         margin-top: 40px;
+    }
+
+    .user-btn {
+        margin-top: 20px;
+        width: 270px;
+        height: 48px;
+    }
+
+    .image-avatar {
+        width: 270px;
+        height: 270px;
+    }
+
+    .add-text {
+        font-size: 18px;
     }
 }
 

@@ -13,58 +13,130 @@
 <body>
 <!-- header -->
 <div class="container-fluid header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 col-sm-2">
-                    <a href="#"><img src="img/logo.png" class="img-responsive" alt="logo"></a>
+    <div class="row user-row">
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <a href="#"><img src="img/logo.png" class="image-logo" alt="logo"></a>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="col-md-3 col-sm-5 col-xs-5">
+            <div class="private-cab">
+                <div class="private">
+                    <a href="#">Личный кабинет</a>
                 </div>
-                <div class="col-md-1 col-sm-1"></div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="private-cab">
-                        <div class="private">
-                            <a href="#">Личный кабинет</a>
-                        </div>
-                        <div class="back">
-                            <a href="#"><img src="img/Прямоугольник-1-копия1.png" alt="str">Вернуться на сайт</a>
-                        </div>
-                    </div>
+                <div class="back">
+                    <a href="#"><img src="img/prymougolnik-1-kopia-1.png" alt="str">Вернуться на сайт</a>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="img-out">
-                        <a href="#"><img src="img/Слой-4-1.png" alt=""></a>
-                        <div class="out">
-                            <a href="#"><span>Выход</span></a>
-                        </div>
-                        <div class="figura">
-                            <img src="img/Фигура-1.png" alt="">
-                        </div>
-                        <div class="admin">
-                            <a href="#">Администратор</a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-4 col-xs-4 xs">
+            <div class="img-out">
+                <a href="#"><img src="http://www.sunhome.ru/i/wallpapers/61/pozitivnie-kartinki.orig.jpg" class="img-circle" alt=""></a>
+                <div class="out">
+                    <a href="#"><span>Выход</span></a>
+                </div>
+                <div class="figura">
+                    <img src="img/figure-1.png" alt="">
+                </div>
+                <div class="admin">
+                    <a href="#"><p>Иванов</p><p>Иван</p></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <!-- menu -->
-<div class="col-md-3 col-sm-3 body">
-    <ul class="menu">
-        <li><img class="icon" src="img/Слой-15.png" alt="ico">Главная
-            <img class="line" src="img/Фигура-3.png" alt="line">
-        </li>
-        <li><img class="icon" src="img/Слой-5.png" alt="">Заказы
-            <img class="line" src="img/Фигура-3.png" alt="line">
-        </li>
-        <li><img class="icon" src="img/Слой-4.png" alt="">Пользователи
-            <img class="line" src="img/Фигура-3.png" alt="line">
-        </li>
-        <li><img class="icon" src="img/Слой-12.png" alt="">Редактировать</li>
-    </ul>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3 body">
+            <ul class="menu">
+                <li><a href="#"><img class="icon" src="img/user-1.png" alt="ico">Главная</li></a>
+                <hr color="black">
+                <li><a href="#"><img class="icon" src="img/layer-5.png" alt="">Мои заказы</li></a>
+                <hr color="black">
+                <li><a href="#"><img class="icon" src="img/layer-12.png" alt="">Настройки</li></a>
+                <hr color="black">
+                <li><a href="#"><img class="icon" src="img/trener-blue.png" alt="">Запись к тренеру</li></a>
+                <hr color="black">
+                <li><a href="#"><img class="icon" src="img/support-blue.png" alt="">Поддержка</li></a>
+            </ul>
+        </div>
+
+<!-- body -->
+
+                <form action="/settings" method="post" enctype="multipart/form-data"><input type="hidden" name="_token">
+                    <div class="col-sm-3">
+                        <h3 class="user-page_header">Настройки</h3>
+                        <div class="text-center text-blue-decoration">
+                            <img src="http://cs9.pikabu.ru/images/big_size_comm/2017-03_5/1490108798122426630.jpg"
+                                                  class="img-circle  image-avatar">
+                            <p class="user-avatar_upload_button"><label class="cabinet">
+                            <div class="text-center">
+                                <span class="add-text">Добавить<br>изображение</span>
+                                <input type="file" name="avatar" value="/avatars/1/b0eb09c63d8de14b8d8c3fbad8e70ffc.jpeg" class="file"
+                                       style="display: none;"></label></p>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="user-btn">СОХРАНИТЬ</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 user-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Выше имя:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="surname" placeholder="Ваша фамилия:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="patronymic" placeholder="Телефон:">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="phone" placeholder="E-mail:">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-control" id="check">
+                            <label for="check">Я хочу, чтобы на мою почту приходили последние новости
+                            от центра пляжного спорта “Пляж”</label>
+                        </div>
+                    </div>
+                </form>
+    </div>
 </div>
-<div class="col-md-9 col-sm-9">
-    
 </div>
+</div>
+</div>
+
 <!-- footer -->
 
+<div class="container-fluid footer">
+    <div class="row user-row">
+        <div class="col-md-2 col-sm-2 col-xs-2">
+            <div class="">
+                <img class="image-logo" src="img/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="col-md-6 col-sm-6 col-xs-6 flex">
+            <div class="phone">
+                <span>+9 (999) 999-99-99</span><br>
+                <span>с 10:00 до 22:00</span>
+            </div>
+                <div class="social">
+                <div><a href="#"><img src="img/vk.png" alt="vk" class="first-ico"></a><br></div>
+                <div><a href="#"><img src="img/instagram.png" alt="insta" class="last-ico"></a>
+            </div>
+            </div>
+
+            <div class="addres">
+                <span>Адрес: Санкт-Петербург, <br> улица Фучика, 2А</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="copyright">
+                <span>2017 © plyazhspb.ru</span>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
