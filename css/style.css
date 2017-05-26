@@ -16,15 +16,30 @@ hr {
     opacity: 0.18;
 }
 
+.border-div {
+    border: 0 0 0 1px solid;
+    width: 90px;
+    height: 80px;
+}
+
 .vertical-line {
     border: 1px solid black;
     width: 1px;
     height: 50px;
     border-collapse: inherit;
+    display: inline-block;
+    margin-top: 30px;
 }
 
-.social > img {
-    width: 20px;
+.icon > img {
+    width: 25px;
+    margin: 10px 0px 30px 10px;
+}
+
+
+
+.icon {
+    display: inline-block;
 }
 
 .row {
@@ -95,8 +110,9 @@ hr {
 .phone {
     display: inline-block;
     font-family: HelveticaNeueCyr;
+    height: 60px;
     color:  #1d1e1e;
-    padding: 20px 10px;
+    padding: 15px 10px 0px 10px;
 }
 
 .phone > span {
@@ -171,6 +187,17 @@ hr {
     color: #fff;
 }
 
+.first-ico {
+    width: 22px;
+    /*margin-left: 10px;*/
+}
+
+.last-ico {
+    width: 22px;
+    margin-left: 5px;
+    /*margin: 0px 0px 35px 0px !important;*/
+}
+
 .figura > img {
     float: right;
     height: 70px;
@@ -195,9 +222,22 @@ hr {
 }
 
 .social {
-    padding-top: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     display: inline-block;
-    height: 50px;
+    padding: 15px 10px;
+}
+
+.flex {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    font-weight: 900;
+}
+
+.social > div {
+    display: table-cell;
+    /*padding: 3px;*/
 }
 
 .circle {
@@ -327,7 +367,7 @@ hr {
         font-size: 17px;
     }
     .phone {
-        padding-top: 45px;
+        padding-top: 33px;
     }
 
     .copyright {
@@ -340,6 +380,14 @@ hr {
         height: 40px;
         margin-top: -15px;
         margin-right: -7px;
+    }
+
+    .social {
+        margin-top: 40px;
+    }
+
+    .addres {
+        margin-top: 40px;
     }
 }
 
